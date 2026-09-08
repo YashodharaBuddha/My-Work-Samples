@@ -9,12 +9,12 @@ Beyond writing, I'm passionate about designing the systems that make documentati
 What you'll find here
 This portfolio features selected documentation projects that showcase my approach to:
 
-✍️ Technical and product documentation
-🧭 Information architecture and content organization
-🔌 API and developer documentation
-📝 User-focused guides and workflows
-🛠️ Documentation processes and content strategy
-💡 Turning complex information into clear experiences
+- ✍️ Technical and product documentation
+- 🧭 Information architecture and content organization
+- 🔌 API and developer documentation
+- 📝 User-focused guides and workflows
+- 🛠️ Documentation processes and content strategy
+- 💡 Turning complex information into clear experiences
 
 Explore the portfolio to see how I combine technical understanding, structured thinking, and user-focused writing to make information work better.
 
