@@ -1,0 +1,14 @@
+# Core Framework
+torch==2.1.0
+
+# Data and Numerical Processing
+numpy>=1.21.0
+
+# Dependencies often used with these versions
+# (Note: Specific versions may vary based on your environment)
+torchvision==0.16.0
+torchaudio==2.1.0
+
+# Ensure CUDA 12.1 compatibility for your environment
+# If you are installing via pip, ensure you target the CUDA 12.1 wheels:
+# --extra-index-url https://download.pytorch.org/whl/cu121
