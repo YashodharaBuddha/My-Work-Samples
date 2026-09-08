@@ -1,0 +1,57 @@
+<document title="Sentiment Analysis Model">
+  <section name="Introduction">
+    <content>At its core, a sentiment analysis model is a type of natural language processing (NLP) algorithm that identifies, extracts, and quantifies the emotional tone or attitude expressed in written text. Essentially, it answers the question: How does the writer feel about this topic?</content>
+  </section>
+  <section name="How It Categorizes Text">
+    <item type="Polarity-based">Classifies text as Positive, Negative, or Neutral.</item>
+    <item type="Fine-grained">Offers more nuance by scaling the sentiment (e.g., Very Positive, Positive, Neutral, Negative, Very Negative), often mapped to 1-5 star ratings.</item>
+    <item type="Emotion Detection">Looks for specific emotional states like Anger, Joy, Sadness, Surprise, or Frustration.</item>
+    <item type="Aspect-Based">Pinpoints what specific feature the person is talking about and the sentiment towards it.</item>
+  </section>
+  <section name="Model Architecture">
+    <flow>Input Text -> Tokenizer -> Embedding (300-dim) -> BiLSTM (256 hidden units) -> Max Pooling -> Dense Layer (128 -> ReLU) -> Softmax Output (2 classes)</flow>
+  </section>
+  <section name="Data Flow">
+    <description>embedding -> BiLSTM -> pooling -> classification</description>
+    <step order="1" name="Embedding Layer">Raw text is split into words and converted into dense numerical vectors.</step>
+    <step order="2" name="BiLSTM Layer">Processes text in two directions (Forward LSTM for past context, Backward LSTM for future context) to understand words in the context of the surrounding sentence.</step>
+    <step order="3" name="Pooling Layer">Compresses the sequence into a single, fixed-size vector representing the entire sentence (Max Pooling or Average Pooling).</step>
+    <step order="4" name="Classification Layer">Uses a Fully Connected (Dense) layer and activation function (Softmax/Sigmoid) to output final probability scores.</step>
+  </section>
+  <section name="Data Schema">
+    <field name="review_text">
+      <type>string</type>
+      <description>Raw customer review text</description>
+    </field>
+    <field name="label">
+      <type>int (0/1)</type>
+      <description>Sentiment label (0 = negative, 1 = positive)</description>
+    </field>
+    <field name="source">
+      <type>string</type>
+      <description>Data source tag</description>
+    </field>
+    <field name="timestamp">
+      <type>string (ISO)</type>
+      <description>Time the review was collected</description>
+    </field>
+  </section>
+  <section name="Training Details">
+    <hyperparameter name="Learning rate">3e-4</hyperparameter>
+    <hyperparameter name="Batch size">64</hyperparameter>
+    <hyperparameter name="Max epochs">10</hyperparameter>
+    <hyperparameter name="Dropout">0.3</hyperparameter>
+    <hyperparameter name="Optimizer">AdamW (weight decay = 0.01)</hyperparameter>
+    <hyperparameter name="Scheduler">Cosine decay + 1k warmup steps</hyperparameter>
+    <hyperparameter name="Seed">42</hyperparameter>
+  </section>
+  <section name="Reproducibility Notes">
+    <note>Random seed: 42 (Python, NumPy, PyTorch)</note>
+    <note>Framework: PyTorch 2.1.0, CUDA 12.1</note>
+    <note>Data: reviews_v3_snapshot_2024-01-10</note>
+    <note>Mixed precision: enabled via torch.cuda.amp</note>
+  </section>
+  <section name="Reflection">
+    <summary>The previous documentation contained fragmented details about model.py. Key improvements include Architectural Clarity, Data Schema &amp; Ground Truth, Operational Readiness, and Standardized Reproducibility.</summary>
+  </section>
+</document>
