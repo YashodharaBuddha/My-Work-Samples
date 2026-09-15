@@ -21,4 +21,5 @@ Explore the portfolio to see how I combine technical understanding, structured t
 * API Documention: https://github.com/YashodharaBuddha/My-Work-Samples/blob/API_documentation/Sample_User_login_and_Activity_logs_API_(SSO).pdf
 * Model Documentation: https://github.com/YashodharaBuddha/My-Work-Samples/blob/Al_model_documentation/sentiment%20analysis%20model_read%20me%20(1).pdf
 * Sample Requirement Documentation: https://github.com/YashodharaBuddha/My-Work-Samples/blob/Product-Documentation/sample_requirement_document.md
+* Sample Prototype/ UI design: https://www.figma.com/proto/8aENndvgvDMdpaQ27qMxyy/Wireframes-for-pampering-wheels?node-id=6-455&starting-point-node-id=1%3A2&t=4ThJ3T9ylyHB8xxh-1
 * RAG model for Zepto as a study project: Zeptodiscovery: https://github.com/YashodharaBuddha/zeptodiscovery#
