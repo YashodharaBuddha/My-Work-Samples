@@ -24,6 +24,7 @@ TalentFlow AI addresses these challenges through four capabilities.
 | Recruitment analytics |	Tracks pipeline conversion, hiring time, and recruiter productivity |
 ## Technical architecture
 The product uses a modular, cloud-native architecture to support scalability and integration.
+```
                                             Web Application
                               (Recruiters, Hiring Managers, Administrators)
                                                   |
@@ -35,6 +36,7 @@ The product uses a modular, cloud-native architecture to support scalability and
                                                   |
                                       Data & Integration Layer
                                 (Databases, Object storage, External APIs)
+```
 Architecture for the TalentFlow AI platform.                                
 
 ## Security and compliance
@@ -47,13 +49,17 @@ The proposed platform incorporates security controls such as:
 Compliance with applicable privacy regulations would require separate validation and organizational controls.
 
 ## Example use case
-### Scenario: An enterprise recruitment team receives 2,000 applications for 20 open positions.
+### Scenario: 
+An enterprise recruitment team receives 2,000 applications for 20 open positions.
 
-### Traditional approach: Recruiters manually review applications, shortlist candidates, and coordinate interviews through email.
+### Traditional approach: 
+Recruiters manually review applications, shortlist candidates, and coordinate interviews through email.
 
-### AI-powered approach: TalentFlow AI parses resumes, recommends candidates against configured job criteria, and triggers interview scheduling workflows after recruiter approval.
+### AI-powered approach: 
+TalentFlow AI parses resumes, recommends candidates against configured job criteria, and triggers interview scheduling workflows after recruiter approval.
 
-### Expected benefit: Reduced repetitive screening tasks, faster candidate progression, and improved pipeline visibility. Actual performance improvements would need to be measured in a pilot.
+### Expected benefit: 
+Reduced repetitive screening tasks, faster candidate progression, and improved pipeline visibility. Actual performance improvements would need to be measured in a pilot.
 
 ## Business value and ROI
 Organizations can evaluate product effectiveness through measurable KPIs.
