@@ -1,5 +1,6 @@
 # Transforming Enterprise Recruitment Through AI-Powered Automation
 A scalable, intelligent approach to modern talent acquisition
+
 Product: TalentFlow AI (fictional) | Version 1.0 | November 2026
 ## Executive summary
 Traditional recruitment systems often depend on manual resume screening, fragmented communication, and disconnected hiring workflows.
@@ -26,15 +27,9 @@ TalentFlow AI addresses these challenges through four capabilities.
 The product uses a modular, cloud-native architecture to support scalability and integration.
 ```
                                             Web Application
-                              (Recruiters, Hiring Managers, Administrators)
-                                                  |
-                                      API Gateways & Authentication
-                                  (REST APIs, OAUTH 2.0, Access Control)
-                                                  |
-                            | Candidate Management | AI Matching Engine |
-                            | Workflow Automation | Reporting & Analytics |
-                                                  |
-                                      Data & Integration Layer
+                              (Recruiters, Hiring Managers, Administrators)-->API Gateways & Authentication
+                                  (REST APIs, OAUTH 2.0, Access Control)-->| Candidate Management | AI Matching Engine |
+                            | Workflow Automation | Reporting & Analytics |-->Data & Integration Layer
                                 (Databases, Object storage, External APIs)
 ```
 Architecture for the TalentFlow AI platform.                                
