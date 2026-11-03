@@ -25,12 +25,8 @@ TalentFlow AI addresses these challenges through four capabilities.
 | Recruitment analytics |	Tracks pipeline conversion, hiring time, and recruiter productivity |
 ## Technical architecture
 The product uses a modular, cloud-native architecture to support scalability and integration.
-```mermaid
-graph TD;
-Web Application (Recruiters, Hiring Managers, Administrators)-->API Gateways & Authentication (REST APIs, OAUTH 2.0, Access Control);
-API Gateways & Authentication (REST APIs, OAUTH 2.0, Access Control)-->(Candidate Management, AI Matching Engine, Workflow Automation, Reporting & Analytics);
-(Candidate Management, AI Matching Engine, Workflow Automation, Reporting & Analytics)-->Data & Integration Layer (Databases, Object storage, External APIs);
-```
+
+<img width="800" height="900" alt="Blank diagram" src="https://github.com/user-attachments/assets/e6f3c380-deac-4af8-9caa-9e1d288892f4" />
 Architecture for the TalentFlow AI platform.                                
 
 ## Security and compliance
