@@ -18,7 +18,9 @@ Recruitment teams commonly face several operational challenges:
 These challenges can increase administrative effort and delay hiring decisions.
 ## Proposed solution
 TalentFlow AI addresses these challenges through four capabilities.
+
 | Capability | Solution |
+|------------|----------|
 | AI resume screening |	Matches candidate qualifications against job requirements |
 | Workflow automation |	Automates scheduling, approvals, and notifications |
 | API integrations |	Connects job boards, HRMS, and communication tools |
@@ -54,6 +56,7 @@ Reduced repetitive screening tasks, faster candidate progression, and improved p
 ## Business value and ROI
 Organizations can evaluate product effectiveness through measurable KPIs.
 | KPI |	Measurement |
+|------------|----------|
 | Time to shortlist |	Hours from application to shortlist |
 | Screening effort |	Recruiter hours per requisition |
 | Time to hire |	Days from requisition to acceptance |
